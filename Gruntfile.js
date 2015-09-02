@@ -5,10 +5,11 @@ module.exports = function (grunt) {
         vulcanize: {
             dist: {
                 options: {
-                    abspath: 'web/'
+                    abspath: 'web/',
+                    targetUrl: '/index.html'
                 },
                 files: {
-                    'build.html': 'index.html'
+                    'build.html': 'web/index.html'
                 }
             }
         }
